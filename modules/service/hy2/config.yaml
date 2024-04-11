@@ -1,0 +1,29 @@
+server: $ServerIp:7889
+
+auth: qwerty666
+
+tls:
+  sni: www.bing.com
+  insecure: true
+
+quic:
+  initStreamReceiveWindow: 16777216
+  maxStreamReceiveWindow: 16777216
+  initConnReceiveWindow: 33554432
+  maxConnReceiveWindow: 33554432
+
+fastOpen: true
+
+socks5:
+  listen: 127.0.0.1:5080
+
+transport:
+  udp:
+    hopInterval: 30s
+
+bandwidth: 
+  up: 80 mbps
+  down: 80 mbps
+
+http:
+  listen: 127.0.0.1:7888

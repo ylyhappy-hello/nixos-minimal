@@ -1,0 +1,6 @@
+[
+  ./vscode
+  # ./lazyvim
+  # ./idea
+  # ./pycharm
+]

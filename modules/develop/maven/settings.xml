@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <pluginGroups />
+    <proxies />
+    <servers />
+
+
+    <mirrors>
+
+        <mirror>
+            <id>alimaven</id>
+            <mirrorOf>central</mirrorOf>
+            <name>aliyun maven</name>
+            <url>https://maven.aliyun.com/repository/central</url>
+        </mirror>
+        <mirror>
+            <id>alimaven</id>
+            <mirrorOf>google</mirrorOf>
+            <name>aliyun maven</name>
+            <url>https://maven.aliyun.com/repository/google</url>
+        </mirror>
+        <mirror>
+            <id>alimaven</id>
+            <mirrorOf>google-plugin</mirrorOf>
+            <name>aliyun maven</name>
+            <url>https://maven.aliyun.com/repository/gradle-plugin</url>
+        </mirror>
+        <mirror>
+            <id>alimaven</id>
+            <mirrorOf>spring-plugin</mirrorOf>
+            <name>aliyun maven</name>
+            <url>https://maven.aliyun.com/repository/spring-plugin</url>
+        </mirror>
+        <mirror>
+            <id>jeecg</id>
+            <mirrorOf>jeecg</mirrorOf>
+            <name>jeecg</name>
+            <url>http://maven.jeewx.com/nexus/content/repositories/snapshots/</url>
+        </mirror>
+        <mirror>
+            <id>jeecg</id>
+            <mirrorOf>jeecg-snapshots</mirrorOf>
+            <name>jeecg</name>
+            <url>http://maven.jeecg.com:8090/nexus/content/repositories/jeecg</url>
+        </mirror>
+
+        <!-- 中央仓库在中国的镜像 -->
+        <mirror>
+            <id>maven.net.cn</id>
+            <name>oneof the central mirrors in china</name>
+            <url>http://maven.net.cn/content/groups/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <id>spring</id>
+                    <url>https://maven.aliyun.com/repository/spring</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.login>admin</sonar.login>
+                <sonar.password>qwerty666</sonar.password>
+                <sonar.host.url>http://192.168.80.137:9000</sonar.host.url>
+            </properties>
+        </profile>
+    </profiles>
+
+</settings>
