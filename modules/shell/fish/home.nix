@@ -7,5 +7,8 @@
   home.file.".config/fish/functions/set_variables.fish".text = import ./functions/set_variables.nix;
   home.file.".config/fish/functions/genVimMapNix.fish".source = ./functions/genVimMapNix.fish;
   home.file.".config/fish/functions/rv.fish".source = ./functions/rv.fish;
+  home.file.".config/fish/functions/clash.fish".source = ./functions/clash.fish;
+  home.file.".config/fish/functions/hy2.fish".source = ./functions/hy2.fish;
+  home.file.".config/fish/functions/insall.fish".source = ./functions/install.fish;
   # home.file.".config/fish/conf.d/st_msg.fish".text = import ./conf.d/st_msg.nix;
 }
